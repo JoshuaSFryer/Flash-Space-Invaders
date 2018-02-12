@@ -1,0 +1,1 @@
+﻿package  {	import flash.display.MovieClip;	import flash.events.Event;	import Alien3;		public class Bullet extends MovieClip{		public var dy:Number = 3;				public function Bullet() {			this.addEventListener(Event.ENTER_FRAME, moveMe);		}				public function moveMe(e:Event):void {			//move vertically in the given direction			this.y -= dy;		}	}}
